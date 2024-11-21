@@ -2,8 +2,9 @@
   "name": "namaste",
   "version": "1.0.0",
   "description": "This is namaste react ",
-  "main": "App.js",
   "scripts": {
+    "start": "rmdir /s /q .parcel-cache && parcel index.html",
+    "build": "rmdir /s /q .parcel-cache && parcel build index.html",
     "test": "jest"
   },
   "repository": {
