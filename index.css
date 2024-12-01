@@ -27,7 +27,8 @@
 .search {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  gap: 5px;
 }
 .search-bar {
   padding: 10px 100px;
@@ -65,4 +66,17 @@
   height: 350px;
   background-color: #f0f0f0;
   margin: 20px;
+}
+
+.login-logout {
+  margin: 20px;
+  padding: 10px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  margin-top: 10px;
 }
