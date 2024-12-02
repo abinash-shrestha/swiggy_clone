@@ -5,26 +5,29 @@ class UserClass extends React.Component {
     super(props);
 
     this.state = {
-      count: 0,
+      userInfo: {
+        name: 'Abinash',
+        location: 'default',
+      },
     };
   }
+  async componentDidMount() {
+    const data = await fetch('https://api.github.com/users/abinash-shrestha');
+    const json = await data.json();
+
+    this.setState({
+      userInfo: json,
+    });
+
+    console.log(json);
+  }
+
   render() {
-    const { name, role } = this.props;
-    const { count, count2 } = this.state;
+    const { name, company } = this.state.userInfo;
     return (
       <div className="user-class">
         <h3>Username : {name}</h3>
-        <h3>User Role : {role}</h3>
-        <h3>Count : {count}</h3>
-        <button
-          onClick={() => {
-            this.setState({
-              count: (this.state.count += 1),
-            });
-          }}
-        >
-          Increase Count
-        </button>
+        <h3>Company : {company}</h3>
       </div>
     );
   }
