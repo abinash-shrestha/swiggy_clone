@@ -80,3 +80,8 @@
   align-items: center;
   margin-top: 10px;
 }
+
+.user-class {
+  padding: 10px;
+  border: 1px solid black;
+}
