@@ -1,6 +1,6 @@
 import Shimmer from './Shimmer';
-import { useParams } from 'react-router-dom';
 import useRestaurantMenu from '../utils/useRestaurantMenu';
+import { useParams } from 'react-router-dom';
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
@@ -23,7 +23,7 @@ const RestaurantMenu = () => {
       <h2>Menu</h2>
       <ul>
         {itemCards.map((item) => (
-          <li key={item.card.info.id}>
+          <li id={item.card.info.id}>
             {item.card.info.name} - {'Rs.'}
             {item.card.info.price / 100 || item.card.info.finalPrice / 100}
           </li>
