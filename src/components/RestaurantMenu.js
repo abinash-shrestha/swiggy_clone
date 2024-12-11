@@ -26,12 +26,12 @@ const RestaurantMenu = () => {
   // console.log(categories);
 
   return (
-    <div className="res-menu">
-      <h1>{name}</h1>
+    <div className="res-menu text-center font-bold">
+      <h1 className="">{name}</h1>
       <p>{cuisines.join(', ')}</p>
       <h2>Menu</h2>
       {categories.map((category) => {
-        console.log(category?.card?.card);
+        // console.log(category?.card?.card);
         return <RestaurantAccordion data={category?.card?.card} />;
       })}
     </div>
