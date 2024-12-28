@@ -20,11 +20,11 @@ const AccordionItem = ({ items }) => {
           </div>
           <div className="w-3/12 p-6    ">
             <div className="absolute">
-              <button className="bg-gray-500 text-white shadow-lg  m-2 p-2 rounded-lg">
+              <button className="bg-gray-500 text-white shadow-lg px-1 rounded-lg">
                 Add+
               </button>
             </div>
-            <img src={CDN_URL + item.card.info.imageId} className="w-full " />
+            <img src={CDN_URL + item.card.info.imageId} className="w-full" />
           </div>
         </div>
       ))}
