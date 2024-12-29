@@ -24,8 +24,10 @@
     "tailwindcss": "^3.4.16"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^7.0.1"
   },
   "@parcel/resolver-default": {
