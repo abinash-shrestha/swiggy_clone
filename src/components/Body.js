@@ -82,14 +82,14 @@ const Body = () => {
           </button>
         </div>
 
-        <div className="mt-7 mx-5">
+        {/* <div className="mt-7 mx-5">
           <label>UserName:</label>
           <input
             className="border border-black mx-3 p-1"
             value={loggedInUser}
             onChange={(e) => setUserName(e.target.value)}
           />
-        </div>
+        </div> */}
       </div>
 
       <div className="res-container flex flex-wrap">
